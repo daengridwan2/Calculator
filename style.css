@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+  margin: 150px auto;
+  height: 60vh;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(135deg, #113f67, #113f67);
+  overflow: hidden;
+}
+
+.simply {
+  padding: 0 20px;
+  margin-right: 50px;
+  color: white;
+}
+
+.simply p {
+  font-style: italic;
+}
+
+.calculator {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  height: 550px;
+}
+
+#display {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 75px;
+  text-align: right;
+  padding: 10px 15px;
+  outline: 0;
+  border-radius: 13px;
+  border: none;
+  margin: 15px 0;
+  margin-top: 30px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 20px auto;
+  height: 310px;
+}
+
+button {
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  border: 13px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: black;
+  transition: all 0.2s ease;
+  border-radius: 20%;
+}
+
+button:hover {
+  background-color: #e6e6e6;
+  transform: scale(1.05);
+}
+
+button.operator {
+  background-color: #00809d;
+  color: #fff;
+}
+
+button.operator:hover {
+  background-color: #3b8d99;
+}
+
+button.equal {
+  background-color: #0abab5;
+  color: #fff;
+  grid-column: span 2;
+}
+
+button.equal:hover {
+  background-color: #219150;
+}
+
+button.clear {
+  background-color: #7a7a73;
+  color: #fff;
+  grid-column: 1;
+}
+
+button.clear:hover {
+  background-color: #c0392b;
+}
+
+button.delete img {
+  width: 30px;
+}
+button.delete {
+  background-color: #00809d;
+  color: #fff;
+}
+
+button.match {
+  color: #ffff;
+  background-color: #56dfcf;
+}
+
+button.convert img {
+  width: 30px;
+}
+
+button.convert {
+  background-color: #56dfcf;
+}
